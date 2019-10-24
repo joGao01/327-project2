@@ -1,0 +1,26 @@
+body{
+    background-color: gray;
+}
+
+.title, .snail, .impossible, .heart, .plumbing, .unfortunate, .slides{
+    height: 100vh;
+}
+
+.title {
+    background-color: gray;
+}
+
+.titleh1{
+    font-size: 15vh;
+    text-align: center;
+    position: inherit;
+    margin-top: 40vh;
+    color: white;
+    animation-name: fadein;
+    animation-duration: 5s;
+}
+
+@keyframes fadein{
+    from {color: gray;}
+    to {color: white;}
+}
