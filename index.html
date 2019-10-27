@@ -3,45 +3,52 @@
     <head>
         <title>I don't know what I'm doing</title>
         <link href="style.css" rel="stylesheet">
-        <script src="script.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        
     </head>
 
-    <body onscroll="checkPosition()">
+    <body>
         <div id="container">
-            <div class="title">
-                <h1 class="titleh1">With Sincerest Regrets</h1>
+            <button class="back">Back To Top</button>
+            <div id="title">
+                <a href="#snail"><h1 class="titleh1">With Sincerest Regrets</h1></a>
             </div>
 
-            <div class="snail">
-                Like a monstrous snail, <br>
-                a toilet slides into a living room on a track of wet <br>
-                demanding to be loved <br>
+            <div id="snail">
+                <a class="snail" href="#impossible">Like a monstrous snail, <br>
+                a toilet slides into a living room on a track of wet<br> 
+                demanding to be loved<br></a>
+                <img class="toilet" src="images/toilet.png">
             </div>
 
-            <div class="impossible">
-                It is impossible, and we tender our sincerest regrets. <br>
+            <div id="impossible">
+                <a class="impossible" href="#heart"><br>It is impossible,<br><br></a>
+                <a class="loved" href="#heart">and we tender our sincerest regrets. <br> </a>
             </div>
             
-            <div class="heart">
-                In the book of heart there is no mention made <br>
+            <div id="heart">
+                <a class="heart" href="#plumbing">In the book of the heart<br></a>
+                <img class="heart-img" src="images/heart.png"><br>
+                <a class="mention" href="#plumbing"> there is no mention made</a>
             </div>
 
-            <div class="plumbing">
-                of plumbing<br>
+            <div id="plumbing">
+                <a class="plumbing" href="#unfortunate"><br><br>of plumbing</a>
             </div>
         
-            <div class="unfortunate">
-                And though we have spent our intimacy many times with you <br>
+            <div id="unfortunate">
+                <a href="#slides">And though we have spent our intimacy many times with you <br>
         
-                you belong to an unfortunate reference, which we would rather not embrace <br>
+                you belong to an unfortunate reference, which we would rather not embrace <br></a>
             </div>
 
-            <div class="slides">
-               The toilet slides away<br>
+            <div id="slides">
+               <a href="#container">The toilet slides away<br></a>
+               <img class="toilet2" src="images/toilet.png"> <!--TO-DO: DOESNT WORK-->
             </div>
             
         </div>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
