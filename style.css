@@ -101,15 +101,23 @@ body{
     90% {transform: scale(1.2)}
 }
 
+#plumbing {
+    text-align: center;
+}
+
 .plumbing {
-    font-size: 4vh;
+    font-size: 6vh;
     animation: fadein 3s forwards; 
-    margin-left: 20vh;
+    margin-left: 10vh;
+    float: left;
 }
 
 .plumbing-gif {
-    animation: fadein 3s infinite;
+    animation: fadein 8s forwards;
+    opacity: 0;
+    animation-delay: 2s;
     margin-left: 20vh;
+    float: left;
 }
 
 .intimacy, .unfortunate{
