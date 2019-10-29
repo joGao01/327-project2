@@ -39,17 +39,25 @@ body{
 }
 
 #snail .toilet{
-    animation: slide 10s infinite;
+    animation: slide 15s forwards;
     margin-top: 10vh;
     left: 100vw;
 }
 
-.snail {  /*TO-DO: made text fade in slower*/
-    animation: fadein 5s;
+#snail > a{  /*TO-DO: made text fade in slower*/
+    animation: fadein 5s forwards;
     font-size: 3vh;
 }
 
+.living{
+    animation: fadein 5s forwards;
+    animation-delay: 3s; /*Does not work*/
+}
 
+.demanding{
+    animation: fadein 5s forwards;
+    animation-delay: 6s;
+}
 
 .impossible, .loved {
     font-size: 10vh;
@@ -58,7 +66,7 @@ body{
 }
 
 .loved {
-    animation-delay: 2s; /*TO-DO: does not work*/
+    animation-delay: 2s; 
     position: relative;
     margin-top: 10vw;
     margin-left: 20vw;
@@ -95,17 +103,78 @@ body{
 
 .plumbing {
     font-size: 4vh;
+    animation: fadein 3s forwards; 
+    margin-left: 20vh;
+}
+
+.plumbing-gif {
+    animation: fadein 3s infinite;
+    margin-left: 20vh;
+}
+
+.intimacy, .unfortunate{
+    font-size: 4vh;
+    animation: fadein 3s forwards;
+    opacity: 0;
+}
+
+.intimacy {
+    margin-left: 10vw;
+}
+
+.unfortunate {
+    animation: fadein 2s forwards, italicize 7s forwards;
+    animation-delay: 2s;
+    margin-left: 15vw;
+
+}
+
+@keyframes italicize{
+    from {font-style: initial;}
+    to {font-style: italic; }
+}
+
+.word {
+    animation: textbeat 1s infinite;
+}
+
+@keyframes textbeat{
+    0% {font-size: 1em;}
+    50% {font-size: 1.2em;}
+    100%{font-size: 1em;}
 }
 
 .toilet2{
-    animation: slideout 10s forwards;
+    animation: slideout 20s forwards;
+    animation-delay: 1s;
     margin-top: 10vh;
-    left: 10vw;
+    margin-left: 20vw;
+}
+
+.slides{
+    font-size: 3vh;
+    animation: slideoutRight 20s forwards, fadeout 15s forwards;
+    animation-delay: 5s;
+}
+
+@keyframes fadeout{
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
 
 @keyframes slideout{
-    from {left: 10vw;}
-    to {left: -200vw;}
+    from {margin-left: 20vw;}
+    to {margin-left: -200vw;}
+}
+
+@keyframes slide{
+    from{left: 100vw}
+    to {left: 20vw}
+}
+
+@keyframes slideoutRight{
+    from {margin-left: 0vw;}
+    to {margin-left: 130vw;}
 }
 
 a{
@@ -117,8 +186,5 @@ a:active{
     color: pink;
 }
 
-@keyframes slide{
-    from{left: 100vw}
-    to {left: 0vw}
-}
+
 

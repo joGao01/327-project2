@@ -9,8 +9,10 @@ $(function() {
         $('html, body').animate({
             scrollTop: 0
         }, 800);
-        //restart animation
-      //  $('.titleh1').css('animation', 'none');
+        //restart animation  //To-Do: this doesnt work
+        $('.titleh1').css('animation', 'none');
+        $('.titleh1').outerHeight();
+        $('.titleh1').css('animation', 'null');
     });
 
     $(window).scroll(function() {
@@ -22,14 +24,6 @@ $(function() {
             $('body').css('background-color', 'white');
         } else if (position > 2*vh - vh/2){
             $('body').css('background-color', 'lightgrey');
-        }
-        
-
-        if($(this).scrollTop() < 5){
-            //restart title animation
-            var el     = $('.titleh1'),  newone = el.clone(true);
-            el.before(newone);
-            $("." + el.attr("class") + ":last").remove();
         }
 
     });
@@ -54,6 +48,8 @@ $(function() {
             });
             //restart animation
             $('.titleh1').css('animation', 'none');
+            $('.titleh1').outerHeight();
+            $('.titleh1').css('animation', 'null');
         } else {
             $('html, body').animate({
                 scrollTop: $(hash).offset().top
